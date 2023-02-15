@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+
+
+  
+  <title>Tic-Tac-Toe</title>
+
+  <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Poor+Story&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="src/css/style.css">
+</head>
+<body>
+<div class="container">
+  <div class="game_wrapper">
+    <div class="game__xo"> <img src="images/o.png" alt="o"> <img src="images/x.png" alt="x"> </div>
+    <div class="game__turn"><img src="images/x.png" alt="x"> Turn </div>
+    <div class="game__restart"> <img src="images/restart.png" alt="restart" class="restart"></div>
+    <div class="game__play">
+      <div class="game__pile"></div>
+      <div class="game__pile"></div>
+      <div class="game__pile"></div>
+      <div class="game__pile"></div>
+      <div class="game__pile"></div>
+      <div class="game__pile"></div>
+      <div class="game__pile"></div>
+      <div class="game__pile"></div>
+      <div class="game__pile"></div>
+    </div>
+    <div class="game__myscore"><img src="images/x.png" alt="x">(YOU) <div class="myscore"></div></div>
+    <div class="game__ties">ties <div class="ties"></div></div>
+    <div class="game__enemyscore"><img src="images/o.png" alt="o">(ENEMY) <div class="enemyscore"></div></div>
+  </div>
+
+</div>
+<div class="end__x"><span> <img src="images/x.png" alt="x"> TAKES THE ROUND</span> 
+<button class="restart">restart</button>
+<button class="nextroundx">next round</button></div>
+<div class="end__o"><span> <img src="images/o.png" alt="o"> TAKES THE ROUND</span> 
+  <button class="restart">restart</button>
+  <button class="nextroundo">next round</button></div>
+<div class="end__tie"><span>TIE!</span> 
+  <button class="restart">restart</button>
+  <button class="nextroundtie">next round</button>
+</div>
+  <script src="js/script.js"></script>
+</body>
+</html>

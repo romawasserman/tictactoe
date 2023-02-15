@@ -1,0 +1,213 @@
+body {
+    background-color: rgb(84, 168, 224);
+    margin: 0;
+}
+*{
+    box-sizing: border-box;
+    font-family: 'Poor Story', cursive;
+}
+.container {
+    height: 66vh;
+    width: 800px;
+    margin: auto;
+    margin-top: 17vh;
+
+    border-radius: 20px;
+}
+.game_wrapper {
+    height: 100%;
+    width: 100%;
+    display:grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: repeat(8, 1fr);
+    gap: 15px;
+}
+
+.game{
+    &__pile {
+        background-color: aquamarine;
+        border-radius: 50px;
+        img {
+            margin: auto;
+            height: 110px;
+            width: 110px;
+            margin-top: 15px;
+            margin-left: 60px;
+        }
+    }
+  &__play {
+    grid-column: 1 / 4;
+    grid-row: 2 / 8;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: repeat(3, 1fr);
+    gap: 15px;
+}
+    &__xo {
+        img {
+            margin-top: 12px;
+            margin-left: 10px;
+            height: 40px;
+            width: 40px;
+
+    }
+}
+    &__turn {
+        font-size: 44px;
+        color: azure;
+        img {
+            margin-top: 12px;
+            margin-left: 10px;
+            height: 40px;
+            width: 40px;
+
+    }
+    }    
+    &__restart {
+        justify-self: end;
+        img {
+            margin-top: 12px;
+            margin-right: 10px;
+            height: 50px;
+            width: 50px;
+            color: rgb(33, 44, 197);
+    }
+    }
+    &__myscore {
+        background-color: rgb(69, 57, 185);
+        border-radius: 40px;
+        text-align: center;
+        font-size: 40px;
+        color:rgb(189, 207, 23);
+        img {
+            margin-top: 12px;
+            margin-left: 10px;
+            height: 40px;
+            width: 40px;
+
+    }
+    }
+    &__ties {
+        padding-top: 13px;
+        background-color: rgb(47, 45, 66);
+        border-radius: 40px;
+        text-align: center;
+        font-size: 40px;
+        color:rgb(189, 207, 23);
+    }
+    &__enemyscore {
+        background-color: rgb(206, 223, 56);
+        border-radius: 40px;
+        text-align: center;
+        font-size: 40px;
+        color:rgb(69, 57, 185);
+        img {
+            margin-top: 12px;
+            margin-left: 10px;
+            height: 40px;
+            width: 40px;
+
+    }
+    }
+}
+// color: rgb(189, 207, 23);
+// color: rgb(33, 44, 197);
+.end__x{
+    display: none;
+    padding: 125px;
+    text-align: center;
+    position: fixed;
+    height: 430px;
+    width: 100vw;
+    top: 245px;
+    background-color: rgba(69, 57, 185, 0.7);
+    font-size: 40px;
+    color:rgb(189, 207, 23);
+    img {
+        height: 80px;
+        width: 80px;
+    }
+    span {
+        display: block;
+        margin-bottom: 15px;
+    }
+}
+
+.end__o{
+    display: none;
+    padding: 125px;
+    text-align: center;
+    position: fixed;
+    height: 430px;
+    width: 100vw;
+    top: 245px;
+    background-color: rgba(189, 207, 23, 0.7);
+    font-size: 40px;
+    color:rgb(69, 57, 185);
+    img {
+        height: 80px;
+        width: 80px;
+    }
+    span {
+        display: block;
+        margin-bottom: 15px;
+    }
+}
+.end__tie {
+    display: none;
+    padding: 125px;
+    text-align: center;
+    position: fixed;
+    height: 430px;
+    width: 100vw;
+    top: 245px;
+    background-color: rgba(127, 255, 212, 0.7);
+    font-size: 40px;
+    color:rgb(0, 0, 0);
+    img {
+        height: 80px;
+        width: 80px;
+    }
+    span {
+        display: block;
+        margin-bottom: 15px;
+    }
+}
+
+
+.restart{
+    height: 80px;
+    width: 160px;
+    border-radius: 40px;
+    text-align: center;
+    font-size: 30px;       
+    background-color: rgb(47, 45, 66);
+    color:rgb(127, 255, 212);
+}
+.nextroundo {
+    height: 80px;
+    width: 160px;
+    border-radius: 40px;
+    text-align: center;
+    font-size: 30px;       
+    background-color: rgb(69, 57, 185);
+    color:rgb(189, 207, 23);
+}
+.nextroundx {
+    height: 80px;
+    width: 160px;
+    border-radius: 40px;
+    text-align: center;
+    font-size: 30px;       
+    background-color:rgb(189, 207, 23);
+    color: rgb(69, 57, 185);
+}
+.nextroundtie {
+    height: 80px;
+    width: 160px;
+    border-radius: 40px;
+    text-align: center;
+    background-color: rgb(47, 45, 66);
+    font-size: 30px;
+    color:rgba(127, 255, 212, );
+}
